@@ -24,6 +24,7 @@
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link id="theme-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/cyborg/bootstrap.min.css">
 
   <style>
@@ -148,27 +149,27 @@
         const tableBody = document.getElementById("table-body");
 
         data.forEach(entry => {
-          const normalizedDate = normalizeDate(entry.last_update);
-          const downloadLink = entry.download_url ? `<a href="${entry.download_url}" target="_blank">Download</a>` : '❔';
-          const sourceLink = entry.source_url ? `<a href="${entry.source_url}" target="_blank">Source</a>` : '❔';
+            const normalizedDate = normalizeDate(entry.last_update);
+            const downloadLink = entry.download_url ? `<a href="${entry.download_url}" target="_blank">Download</a>` : '<i class="fas fa-question-circle"></i>';
+            const sourceLink = entry.source_url ? `<a href="${entry.source_url}" target="_blank">Source</a>` : '<i class="fas fa-question-circle"></i>';
 
-          const row = document.createElement("tr");
+            const row = document.createElement("tr");
 
-          row.innerHTML = `
-            <td>${entry.name || '❔'}</td>
-            <td>${entry.author || '❔'}</td>
-            <td>${entry.category || '❔'}</td>
-            <td>${normalizedDate || '❔'}</td>
-            <td>${entry.latest_version || '❔'}</td>
-            <td>${downloadLink}</td>
-            <td>${sourceLink}</td>
-            <td>${entry.min_mc_version || '❔'}</td>
-            <td>${entry.max_mc_version || '❔'}</td>
-            <td>${entry.min_pk_version || '❔'}</td>
-            <td>${entry.max_pk_version || '❔'}</td>
-          `;
+            row.innerHTML = `
+              <td>${entry.name || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${entry.author || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${entry.category || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${normalizedDate || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${entry.latest_version || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${downloadLink}</td>
+              <td>${sourceLink}</td>
+              <td>${entry.min_mc_version || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${entry.max_mc_version || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${entry.min_pk_version || '<i class="fas fa-question-circle"></i>'}</td>
+              <td>${entry.max_pk_version || '<i class="fas fa-question-circle"></i>'}</td>
+            `;
 
-          tableBody.appendChild(row);
+            tableBody.appendChild(row);
         });
 
         $.fn.dataTable.moment('YYYY-MM-DD');
