@@ -25,53 +25,53 @@
     "min_pk_version": "1.11.3",
     "max_pk_version": "1.12-BETA"
   },
-    {
+  {
     "name": "Guidance",
     "author": "Cozmyc",
     "category": "Ability (Air/Spiritual)",
     "release_date": "",
     "latest_version": "1.1.0",
     "download_url": "https://github.com/CozmycDev/PK-Guidance/releases",
-    "source_url": "https://github.com/CozmycDev/PK-Guidance/",
+    "source_url": "https://github.com/CozmycDev/PK-Guidance",
     "min_mc_version": "1.16.5",
     "max_mc_version": "1.21.1",
     "min_pk_version": "",
     "max_pk_version": ""
   },
-    {
+  {
     "name": "BloodShock",
     "author": "Cozmyc",
     "category": "Ability (Water/Bloodbending)",
     "release_date": "",
     "latest_version": "1.0.6",
     "download_url": "https://github.com/CozmycDev/PK-BloodShock/releases",
-    "source_url": "https://github.com/CozmycDev/PK-BloodShock/",
+    "source_url": "https://github.com/CozmycDev/PK-BloodShock",
     "min_mc_version": "1.16.5",
     "max_mc_version": "1.21.1",
     "min_pk_version": "",
     "max_pk_version": ""
   },
-    {
+  {
     "name": "SandSpout",
     "author": "Cozmyc",
     "category": "Ability (Earth/Sand)",
     "release_date": "",
     "latest_version": "1.0.7",
     "download_url": "https://github.com/CozmycDev/PK-SandSpout/releases",
-    "source_url": "https://github.com/CozmycDev/PK-SandSpout/",
+    "source_url": "https://github.com/CozmycDev/PK-SandSpout",
     "min_mc_version": "1.16.5",
     "max_mc_version": "1.21.1",
     "min_pk_version": "",
     "max_pk_version": ""
   },
-    {
+  {
     "name": "Sprout",
     "author": "NickC1211 (Fork: Cozmyc)",
     "category": "Ability (Water/Plantbending)",
     "release_date": "",
     "latest_version": "5.3.1",
     "download_url": "https://github.com/CozmycDev/PK-Sprout/releases",
-    "source_url": "https://github.com/CozmycDev/PK-Sprout/",
+    "source_url": "https://github.com/CozmycDev/PK-Sprout",
     "min_mc_version": "1.16.5",
     "max_mc_version": "1.21.1",
     "min_pk_version": "",
