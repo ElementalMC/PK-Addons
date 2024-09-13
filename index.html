@@ -141,32 +141,36 @@
     }
 
     fetchAndMergeData().then(data => {
-      if (!Array.isArray(data)) {
-        console.error('Invalid data format: Expected an array');
-        return;
-      }
+        if (!Array.isArray(data)) {
+            console.error('Invalid data format: Expected an array');
+            return;
+        }
 
-      const tableBody = document.getElementById("table-body");
+        const tableBody = document.getElementById("table-body");
 
-      data.forEach(entry => {
-        const normalizedDate = normalizeDate(entry.last_update);
-        const row = document.createElement("tr");
+        data.forEach(entry => {
+          const normalizedDate = normalizeDate(entry.last_update);
+          const downloadLink = entry.download_url ? `<a href="${entry.download_url}" target="_blank">Download</a>` : 'Unknown';
+          const sourceLink = entry.source_url ? `<a href="${entry.source_url}" target="_blank">Source</a>` : 'Unknown';
 
-        row.innerHTML = `
-          <td>${entry.name || 'N/A'}</td>
-          <td>${entry.author || 'N/A'}</td>
-          <td>${entry.category || 'N/A'}</td>
-          <td>${normalizedDate || 'N/A'}</td>
-          <td>${entry.latest_version || 'N/A'}</td>
-          <td><a href="${entry.download_url || '#'}" target="_blank">Download</a></td>
-          <td><a href="${entry.source_url || '#'}" target="_blank">Source</a></td>
-          <td>${entry.min_mc_version || 'N/A'}</td>
-          <td>${entry.max_mc_version || 'N/A'}</td>
-          <td>${entry.min_pk_version || 'N/A'}</td>
-          <td>${entry.max_pk_version || 'N/A'}</td>
-        `;
+          const row = document.createElement("tr");
 
-        tableBody.appendChild(row);
+          row.innerHTML = `
+            <td>${entry.name || 'Unknown'}</td>
+            <td>${entry.author || 'Unknown'}</td>
+            <td>${entry.category || 'Unknown'}</td>
+            <td>${normalizedDate || 'Unknown'}</td>
+            <td>${entry.latest_version || 'Unknown'}</td>
+            <td>${downloadLink}</td>
+            <td>${sourceLink}</td>
+            <td>${entry.min_mc_version || 'Unknown'}</td>
+            <td>${entry.max_mc_version || 'Unknown'}</td>
+            <td>${entry.min_pk_version || 'Unknown'}</td>
+            <td>${entry.max_pk_version || 'Unknown'}</td>
+          `;
+
+          tableBody.appendChild(row);
+        });
       });
 
       $.fn.dataTable.moment('YYYY-MM-DD');
