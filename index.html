@@ -149,23 +149,23 @@
 
         data.forEach(entry => {
           const normalizedDate = normalizeDate(entry.last_update);
-          const downloadLink = entry.download_url ? `<a href="${entry.download_url}" target="_blank">Download</a>` : 'Unknown';
-          const sourceLink = entry.source_url ? `<a href="${entry.source_url}" target="_blank">Source</a>` : 'Unknown';
+          const downloadLink = entry.download_url ? `<a href="${entry.download_url}" target="_blank">Download</a>` : '❔';
+          const sourceLink = entry.source_url ? `<a href="${entry.source_url}" target="_blank">Source</a>` : '❔';
 
           const row = document.createElement("tr");
 
           row.innerHTML = `
-            <td>${entry.name || 'Unknown'}</td>
-            <td>${entry.author || 'Unknown'}</td>
-            <td>${entry.category || 'Unknown'}</td>
-            <td>${normalizedDate || 'Unknown'}</td>
-            <td>${entry.latest_version || 'Unknown'}</td>
+            <td>${entry.name || '❔'}</td>
+            <td>${entry.author || '❔'}</td>
+            <td>${entry.category || '❔'}</td>
+            <td>${normalizedDate || '❔'}</td>
+            <td>${entry.latest_version || '❔'}</td>
             <td>${downloadLink}</td>
             <td>${sourceLink}</td>
-            <td>${entry.min_mc_version || 'Unknown'}</td>
-            <td>${entry.max_mc_version || 'Unknown'}</td>
-            <td>${entry.min_pk_version || 'Unknown'}</td>
-            <td>${entry.max_pk_version || 'Unknown'}</td>
+            <td>${entry.min_mc_version || '❔'}</td>
+            <td>${entry.max_mc_version || '❔'}</td>
+            <td>${entry.min_pk_version || '❔'}</td>
+            <td>${entry.max_pk_version || '❔'}</td>
           `;
 
           tableBody.appendChild(row);
