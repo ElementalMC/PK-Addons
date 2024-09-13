@@ -249,7 +249,7 @@
     {
         "name": "CactusBlast",
         "author": "StrangeOne101",
-        "category": "Unknown",
+        "category": "Ability / Water / Plantbending",
         "last_update": "May 11, 2022",
         "latest_version": "1.1",
         "download_url": "https://projectkorra.com/forum/resources/cactusblast.169/download",
@@ -288,7 +288,7 @@
     {
         "name": "HoverBoard",
         "author": "Sammycocobear",
-        "category": "Unknown",
+        "category": "Ability / Chiblocking",
         "last_update": "Nov 6, 2022",
         "latest_version": "1.0.1",
         "download_url": "https://projectkorra.com/forum/resources/hoverboard.467/download",
@@ -379,7 +379,7 @@
     {
         "name": "Sprinkle",
         "author": "Hiro3",
-        "category": "Unknown",
+        "category": "Ability / Water",
         "last_update": "Feb 28, 2022",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/sprinkle.469/download",
@@ -561,7 +561,7 @@
     {
         "name": "FireJet+",
         "author": "Finn_Bueno_",
-        "category": "Unknown",
+        "category": "Ability / Fire",
         "last_update": "Jul 21, 2021",
         "latest_version": "1.1.0",
         "download_url": "https://projectkorra.com/forum/resources/firejet.435/download",
@@ -600,7 +600,7 @@
     {
         "name": "FireBomb",
         "author": "greenwolf5",
-        "category": "Unknown",
+        "category": "Ability / Fire",
         "last_update": "Jul 9, 2021",
         "latest_version": "v1.0.4",
         "download_url": "https://projectkorra.com/forum/resources/firebomb.434/download",
@@ -613,7 +613,7 @@
     {
         "name": "EarthShove",
         "author": "Finn_Bueno_",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Jul 5, 2021",
         "latest_version": "1.1.1",
         "download_url": "https://projectkorra.com/forum/resources/earthshove.430/download",
@@ -912,7 +912,7 @@
     {
         "name": "FireDisc",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Fire",
         "last_update": "Feb 14, 2019",
         "latest_version": "2.0.3",
         "download_url": "https://projectkorra.com/forum/resources/firedisc.130/download",
@@ -977,7 +977,7 @@
     {
         "name": "MagmaLine",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Fire / Lavabending",
         "last_update": "Oct 17, 2016",
         "latest_version": "1.1",
         "download_url": "https://projectkorra.com/forum/resources/magmaline.238/download",
@@ -990,7 +990,7 @@
     {
         "name": "MetalCables",
         "author": "Finn_Bueno_",
-        "category": "Unknown",
+        "category": "Ability / Earth / Metalbending",
         "last_update": "Aug 31, 2017",
         "latest_version": "1.5",
         "download_url": "https://projectkorra.com/forum/resources/metalcables.271/download",
@@ -1380,7 +1380,7 @@
     {
         "name": "[Combo] FlameRush",
         "author": "Sorin",
-        "category": "Unknown",
+        "category": "Ability / Fire",
         "last_update": "Mar 4, 2019",
         "latest_version": "v2.0",
         "download_url": "https://projectkorra.com/forum/resources/combo-flamerush.359/download",
@@ -1406,7 +1406,7 @@
     {
         "name": "EarthKick",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Feb 17, 2019",
         "latest_version": "1.1.0",
         "download_url": "https://projectkorra.com/forum/resources/earthkick.297/download",
@@ -1419,7 +1419,7 @@
     {
         "name": "EnergyBeam",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Energy",
         "last_update": "Feb 17, 2019",
         "latest_version": "1.3.0",
         "download_url": "https://projectkorra.com/forum/resources/energybeam.269/download",
@@ -1432,7 +1432,7 @@
     {
         "name": "LavaFlux",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Fire / Lavabending",
         "last_update": "Feb 14, 2019",
         "latest_version": "1.0.2",
         "download_url": "https://projectkorra.com/forum/resources/lavaflux.305/download",
@@ -1445,7 +1445,7 @@
     {
         "name": "MetalRepair",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Earth / Metalbending",
         "last_update": "Feb 14, 2019",
         "latest_version": "1.0.3",
         "download_url": "https://projectkorra.com/forum/resources/metalrepair.240/download",
@@ -1536,7 +1536,7 @@
     {
         "name": "MetalThrow",
         "author": "SenpaiBlaze",
-        "category": "Unknown",
+        "category": "Ability / Earth / Metalbending",
         "last_update": "Jul 12, 2015",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/metalthrow.140/download",
@@ -1588,7 +1588,7 @@
     {
         "name": "SeismicSense",
         "author": "Finn_Bueno_",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Jul 21, 2017",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/seismicsense.300/download",
@@ -1614,7 +1614,7 @@
     {
         "name": "EarthDrag",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Aug 21, 2017",
         "latest_version": "1.2.1",
         "download_url": "https://projectkorra.com/forum/resources/earthdrag.237/download",
@@ -1653,7 +1653,7 @@
     {
         "name": "RazorLeaf",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Water / Plantbending",
         "last_update": "Dec 10, 2015",
         "latest_version": "1.3",
         "download_url": "https://projectkorra.com/forum/resources/razorleaf.145/download",
@@ -1731,7 +1731,7 @@
     {
         "name": "BoomBurst",
         "author": "xXILegendIXx",
-        "category": "Unknown",
+        "category": "Ability / Fire",
         "last_update": "Dec 25, 2017",
         "latest_version": "2017-12-21",
         "download_url": "https://projectkorra.com/forum/resources/boomburst.333/download",
@@ -1770,7 +1770,7 @@
     {
         "name": "SeismicSense",
         "author": "Fuzzy",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Oct 18, 2014",
         "latest_version": "1.0.0",
         "download_url": "https://projectkorra.com/forum/resources/seismicsense.20/download",
@@ -1861,7 +1861,7 @@
     {
         "name": "EarthWave",
         "author": "YourAverageNerd",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Mar 15, 2017",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/earthwave.258/download",
@@ -1900,7 +1900,7 @@
     {
         "name": "EarthRing",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Feb 16, 2017",
         "latest_version": "1.0.3",
         "download_url": "https://projectkorra.com/forum/resources/earthring.252/download",
@@ -1913,7 +1913,7 @@
     {
         "name": "Drag",
         "author": "_MartyMan_",
-        "category": "Unknown",
+        "category": "Ability / Air",
         "last_update": "Apr 26, 2017",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/drag.270/download",
@@ -1939,7 +1939,7 @@
     {
         "name": "EarthManipulation",
         "author": "AlexTheCoder",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Oct 5, 2014",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/earthmanipulation.11/download",
@@ -1952,7 +1952,7 @@
     {
         "name": "WaterRestore (Combo)",
         "author": "Azarattum",
-        "category": "Unknown",
+        "category": "Ability / Water",
         "last_update": "Oct 15, 2016",
         "latest_version": "3.2",
         "download_url": "https://projectkorra.com/forum/resources/waterrestore-combo.209/download",
@@ -1978,7 +1978,7 @@
     {
         "name": "Cyclone",
         "author": "YourAverageNerd",
-        "category": "Unknown",
+        "category": "Ability / Air",
         "last_update": "Jan 21, 2017",
         "latest_version": "1.0.0",
         "download_url": "https://projectkorra.com/forum/resources/cyclone.251/download",
@@ -2017,7 +2017,7 @@
     {
         "name": "JackOSplosion",
         "author": "ProjectKorra",
-        "category": "Unknown",
+        "category": "Ability / Holiday / Halloween",
         "last_update": "Oct 28, 2016",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/jackosplosion.244/download",
@@ -2030,7 +2030,7 @@
     {
         "name": "Energybending",
         "author": "AlexTheCoder",
-        "category": "Unknown",
+        "category": "Ability / Energy / Avatar",
         "last_update": "May 23, 2015",
         "latest_version": "3",
         "download_url": "https://projectkorra.com/forum/resources/energybending.10/download",
@@ -2056,7 +2056,7 @@
     {
         "name": "IceSlice",
         "author": "dookoo782",
-        "category": "Unknown",
+        "category": "Ability / Water / Icebending",
         "last_update": "Aug 21, 2015",
         "latest_version": "1.3.5",
         "download_url": "https://projectkorra.com/forum/resources/iceslice.67/download",
@@ -2069,7 +2069,7 @@
     {
         "name": "SnowStorm",
         "author": "dookoo782",
-        "category": "Unknown",
+        "category": "Ability / Water / Icebending",
         "last_update": "Aug 21, 2015",
         "latest_version": "1.2",
         "download_url": "https://projectkorra.com/forum/resources/snowstorm.71/download",
@@ -2108,7 +2108,7 @@
     {
         "name": "Cloudsurf",
         "author": "Matt",
-        "category": "Unknown",
+        "category": "Ability / Air",
         "last_update": "Jul 9, 2015",
         "latest_version": "Beta 3.0",
         "download_url": "https://projectkorra.com/forum/resources/cloudsurf.101/download",
@@ -2121,7 +2121,7 @@
     {
         "name": "FireComet",
         "author": "dookoo782",
-        "category": "Unknown",
+        "category": "Ability / Fire",
         "last_update": "Aug 21, 2015",
         "latest_version": "1.6",
         "download_url": "https://projectkorra.com/forum/resources/firecomet.63/download",
@@ -2134,7 +2134,7 @@
     {
         "name": "AirJump",
         "author": "Sketz",
-        "category": "Unknown",
+        "category": "Ability / Air",
         "last_update": "Jan 8, 2016",
         "latest_version": "1.8.9",
         "download_url": "https://projectkorra.com/forum/resources/airjump.33/download",
@@ -2147,7 +2147,7 @@
     {
         "name": "Burrow Combo",
         "author": "Ron",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Aug 6, 2015",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/burrow-combo.160/download",
@@ -2160,7 +2160,7 @@
     {
         "name": "Christmas Blast",
         "author": "ProjectKorra",
-        "category": "Unknown",
+        "category": "Ability / Holiday / Christmas",
         "last_update": "Dec 4, 2015",
         "latest_version": "2015",
         "download_url": "https://projectkorra.com/forum/resources/christmas-blast.210/download",
@@ -2173,7 +2173,7 @@
     {
         "name": "BubbleBlast",
         "author": "dookoo782",
-        "category": "Unknown",
+        "category": "Ability / Water",
         "last_update": "Aug 22, 2015",
         "latest_version": "1.1",
         "download_url": "https://projectkorra.com/forum/resources/bubbleblast.83/download",
@@ -2186,7 +2186,7 @@
     {
         "name": "EarthGlove",
         "author": "moo3oo3oo3",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Jun 30, 2015",
         "latest_version": "1.1.3",
         "download_url": "https://projectkorra.com/forum/resources/earthglove.95/download",
@@ -2199,7 +2199,7 @@
     {
         "name": "Shock",
         "author": "moo3oo3oo3",
-        "category": "Unknown",
+        "category": "Ability / Fire / Lightning",
         "last_update": "Jun 30, 2015",
         "latest_version": "1.0.9",
         "download_url": "https://projectkorra.com/forum/resources/shock.77/download",
@@ -2212,7 +2212,7 @@
     {
         "name": "EarthSkate",
         "author": "moo3oo3oo3",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Jun 30, 2015",
         "latest_version": "1..0.4",
         "download_url": "https://projectkorra.com/forum/resources/earthskate.85/download",
@@ -2225,7 +2225,7 @@
     {
         "name": "EarthCling",
         "author": "moo3oo3oo3",
-        "category": "Unknown",
+        "category": "Ability Earth",
         "last_update": "Jun 30, 2015",
         "latest_version": "1.0.7",
         "download_url": "https://projectkorra.com/forum/resources/earthcling.87/download",
@@ -2238,7 +2238,7 @@
     {
         "name": "Flamethrower",
         "author": "Matt",
-        "category": "Unknown",
+        "category": "Ability / Fire",
         "last_update": "Jun 16, 2015",
         "latest_version": "Beta 1.0",
         "download_url": "https://projectkorra.com/forum/resources/flamethrower.89/download",
@@ -2251,7 +2251,7 @@
     {
         "name": "Propel",
         "author": "Sketz",
-        "category": "Unknown",
+        "category": "Ability / Chiblocking",
         "last_update": "Jun 6, 2015",
         "latest_version": "1.8.2",
         "download_url": "https://projectkorra.com/forum/resources/propel.103/download",
@@ -2264,7 +2264,7 @@
     {
         "name": "WaterControl",
         "author": "AlexTheCoder",
-        "category": "Unknown",
+        "category": "Ability / Water",
         "last_update": "Oct 5, 2014",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/watercontrol.12/download",
@@ -2277,7 +2277,7 @@
     {
         "name": "EarthSink",
         "author": "dookoo782",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Apr 13, 2015",
         "latest_version": "1.3",
         "download_url": "https://projectkorra.com/forum/resources/earthsink.78/download",
@@ -2290,7 +2290,7 @@
     {
         "name": "AirGlide",
         "author": "AlexTheCoder",
-        "category": "Unknown",
+        "category": "Ability / Air",
         "last_update": "May 23, 2015",
         "latest_version": "3",
         "download_url": "https://projectkorra.com/forum/resources/airglide.8/download",
@@ -2303,7 +2303,7 @@
     {
         "name": "BloodbendingRemove",
         "author": "AlexTheCoder",
-        "category": "Unknown",
+        "category": "Ability / Water / Bloodbending",
         "last_update": "May 23, 2015",
         "latest_version": "3",
         "download_url": "https://projectkorra.com/forum/resources/bloodbendingremove.9/download",
@@ -2316,7 +2316,7 @@
     {
         "name": "Repair",
         "author": "AlexTheCoder",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "May 23, 2015",
         "latest_version": "2",
         "download_url": "https://projectkorra.com/forum/resources/repair.41/download",
@@ -2329,7 +2329,7 @@
     {
         "name": "LavaCool",
         "author": "Matt",
-        "category": "Unknown",
+        "category": "Ability / Fire / Lavabending",
         "last_update": "Mar 25, 2015",
         "latest_version": "Alpha 1.0",
         "download_url": "https://projectkorra.com/forum/resources/lavacool.93/download",
@@ -2342,7 +2342,7 @@
     {
         "name": "Flight",
         "author": "AlexTheCoder",
-        "category": "Unknown",
+        "category": "Ability / Air / Flight",
         "last_update": "Dec 28, 2014",
         "latest_version": "2",
         "download_url": "https://projectkorra.com/forum/resources/flight.40/download",
@@ -2355,7 +2355,7 @@
     {
         "name": "EarthSmash",
         "author": "Coolade",
-        "category": "Unknown",
+        "category": "Ability / Earth",
         "last_update": "Dec 8, 2014",
         "latest_version": "1.0.4",
         "download_url": "https://projectkorra.com/forum/resources/earthsmash.32/download",
@@ -2368,7 +2368,7 @@
     {
         "name": "MedicalKit",
         "author": "Orion_Solus",
-        "category": "Unknown",
+        "category": "Ability / Chiblocking",
         "last_update": "Dec 6, 2014",
         "latest_version": "2.0.0",
         "download_url": "https://projectkorra.com/forum/resources/medicalkit.30/download",
@@ -2381,7 +2381,7 @@
     {
         "name": "Sonicblast",
         "author": "Fuzzy",
-        "category": "Unknown",
+        "category": "Ability / Air",
         "last_update": "Oct 8, 2014",
         "latest_version": "1.0.0",
         "download_url": "https://projectkorra.com/forum/resources/sonicblast.18/download",
@@ -2537,7 +2537,7 @@
     {
         "name": "Hyperion",
         "author": "Moros",
-        "category": "Unknown",
+        "category": "Side Plugin / Ability Pack",
         "last_update": "Nov 13, 2022",
         "latest_version": "1.7.0",
         "download_url": "https://projectkorra.com/forum/resources/hyperion.406/download",
@@ -2758,7 +2758,7 @@
     {
         "name": "AvatarGlow",
         "author": "PhanaticD",
-        "category": "Unknown",
+        "category": "Side plugin",
         "last_update": "Mar 4, 2019",
         "latest_version": "1.0.0",
         "download_url": "https://projectkorra.com/forum/resources/avatarglow.361/download",
@@ -2784,7 +2784,7 @@
     {
         "name": "ProjectKorra NametagEdit integration",
         "author": "PhanaticD",
-        "category": "Unknown",
+        "category": "Side plugin",
         "last_update": "Sep 9, 2018",
         "latest_version": "1.1.0",
         "download_url": "https://projectkorra.com/forum/resources/projectkorra-nametagedit-integration.351/download",
@@ -2836,7 +2836,7 @@
     {
         "name": "Bending Board",
         "author": "runefist",
-        "category": "Unknown",
+        "category": "Side plugin",
         "last_update": "Nov 9, 2016",
         "latest_version": "1.2.0",
         "download_url": "https://projectkorra.com/forum/resources/bending-board.239/download",
@@ -2862,7 +2862,7 @@
     {
         "name": "PK Addon Class Wizard",
         "author": "Finn_Bueno_",
-        "category": "Unknown",
+        "category": "Side plugin",
         "last_update": "Aug 29, 2017",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/pk-addon-class-wizard.320/download",
@@ -2901,7 +2901,7 @@
     {
         "name": "BendingParty",
         "author": "Simplicitee",
-        "category": "Unknown",
+        "category": "Side plugin",
         "last_update": "Jun 19, 2017",
         "latest_version": "1.1.3",
         "download_url": "https://projectkorra.com/forum/resources/bendingparty.282/download",
@@ -2914,7 +2914,7 @@
     {
         "name": "BenderGUI",
         "author": "bubbleguj",
-        "category": "Unknown",
+        "category": "Side plugin",
         "last_update": "Mar 5, 2015",
         "latest_version": "1.2",
         "download_url": "https://projectkorra.com/forum/resources/bendergui.79/download",
@@ -2927,7 +2927,7 @@
     {
         "name": "PKComboModuleAPI",
         "author": "Carbogen",
-        "category": "Unknown",
+        "category": "Side plugin",
         "last_update": "Nov 22, 2014",
         "latest_version": "v1.0.0",
         "download_url": "https://projectkorra.com/forum/resources/pkcombomoduleapi.29/download",
