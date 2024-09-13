@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv='cache-control' content='no-cache'> 
+  <meta http-equiv='expires' content='0'> 
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="Cozmyc">
+  <meta name="twitter:title" content="ProjectKorra Addons Catalogue">
+  <meta name="twitter:description" content="Welcome to the catalogue of addons for ProjectKorra, sourced from the ProjectKorra forums and GitHub, fully updated at least quarterly. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
+  <meta name="twitter:url" content="https://github.com/CozmycDev/PK-Addons/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ProjectKorra Addons Catalogue">
+  <meta property="og:description" content="Welcome to the catalogue of addons for ProjectKorra, sourced from the ProjectKorra forums and GitHub, fully updated at least quarterly. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
+  <meta property="og:url" content="https://github.com/CozmycDev/PK-Addons/">
+
+  <title>ProjectKorra Addons</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+  <link id="theme-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/cyborg/bootstrap.min.css">
+
+  <style>
+    .theme-selector {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 1000; 
+      background-color: #212121; 
+      padding: 10px; 
+      border-radius: 5px;
+      display: inline-block; 
+      min-width: 150px;
+    }
+  </style>
+</head>
+
+<body>
+    <div class="theme-selector">
+    <select id="theme-selector" class="form-select">
+        <option value="cyborg">Cyborg</option>
+        <option value="cerulean">Cerulean</option>
+        <option value="darkly">Darkly</option>
+        <option value="litera">Litera</option>
+        <option value="materia">Materia</option>
+        <option value="pulse">Pulse</option>
+        <option value="simplex">Simplex</option>
+        <option value="solar">Solar</option>
+        <option value="united">United</option>
+        <option value="zephyr">Zephyr</option>
+        <option value="cosmo">Cosmo</option>
+        <option value="flatly">Flatly</option>
+        <option value="lumen">Lumen</option>
+        <option value="minty">Minty</option>
+        <option value="quartz">Quartz</option>
+        <option value="sketchy">Sketchy</option>
+        <option value="spacelab">Spacelab</option>
+        <option value="vapor">Vapor</option>
+        <option value="journal">Journal</option>
+        <option value="lux">Lux</option>
+        <option value="morph">Morph</option>
+        <option value="sandstone">Sandstone</option>
+        <option value="slate">Slate</option>
+        <option value="superhero">Superhero</option>
+        <option value="yeti">Yeti</option>
+    </select>
+  </div>
+
+  <div class="container my-5">
+    <h1 class="text-center mb-4">ProjectKorra Addons</h1>
+    
+    <div class="table-responsive">
+      <table id="table" class="table table-striped table-bordered">
+
+        <thead class="table-dark">
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Last Update</th>
+            <th>Latest Version</th>
+            <th>Download</th>
+            <th>Source</th>
+            <th>Min MC</th>
+            <th>Max MC</th>
+            <th>Min PK</th>
+            <th>Max PK</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body">
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.13.3/sorting/datetime-moment.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const forumUrl = "https://cozmycdev.github.io/PK-Addons/forum.json";
+      const githubUrl = "https://cozmycdev.github.io/PK-Addons/github.json";
+
+      function fetchAndMergeData() {
+        return Promise.all([fetch(forumUrl), fetch(githubUrl)])
+          .then(responses => Promise.all(responses.map(res => res.json())))
+          .then(([forumData, githubData]) => {
+            if (!Array.isArray(forumData) || !Array.isArray(githubData)) {
+              throw new Error('Invalid data format: Expected arrays');
+            }
+
+            return [...forumData, ...githubData];
+          })
+          .catch(error => {
+            console.error('Error fetching or merging data:', error);
+            return [];
+          });
+      }
+
+      function normalizeDate(dateStr) {
+        const formats = [
+          "MMM D, YYYY", // e.g. "Apr 13, 2015"
+          "MMM D YYYY", // e.g. "Apr 13 2015"
+          "MMMM D, YYYY", // e.g. "April 13, 2015"
+          "MMMM D YYYY" // e.g. "April 13 2015"
+        ];
+
+        const date = moment(dateStr, formats, true);
+        return date.isValid() ? date.format('YYYY-MM-DD') : null;
+      }
+
+      fetchAndMergeData().then(data => {
+        if (!Array.isArray(data)) {
+          console.error('Invalid data format: Expected an array');
+          return;
+        }
+
+        const tableBody = document.getElementById("table-body");
+
+        data.forEach(entry => {
+          const normalizedDate = normalizeDate(entry.last_update);
+          const row = document.createElement("tr");
+
+          row.innerHTML = `
+            <td>${entry.name || 'N/A'}</td>
+            <td>${entry.author || 'N/A'}</td>
+            <td>${entry.category || 'N/A'}</td>
+            <td>${normalizedDate || 'N/A'}</td>
+            <td>${entry.latest_version || 'N/A'}</td>
+            <td><a href="${entry.download_url || '#'}" target="_blank">Download</a></td>
+            <td><a href="${entry.source_url || '#'}" target="_blank">Source</a></td>
+            <td>${entry.min_mc_version || 'N/A'}</td>
+            <td>${entry.max_mc_version || 'N/A'}</td>
+            <td>${entry.min_pk_version || 'N/A'}</td>
+            <td>${entry.max_pk_version || 'N/A'}</td>
+          `;
+
+          tableBody.appendChild(row);
+        });
+
+        $.fn.dataTable.moment('YYYY-MM-DD');
+        $('#table').DataTable();
+      });
+
+      document.getElementById('theme-selector').addEventListener('change', function() {
+        const theme = this.value;
+        const themeStylesheet = document.getElementById('theme-stylesheet');
+        themeStylesheet.href = `https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/${theme}/bootstrap.min.css`;
+      });
+    });
+  </script>
+</body>
+
+</html>
