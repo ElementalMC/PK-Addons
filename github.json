@@ -336,5 +336,18 @@
         "max_mc_version": "1.20.4",
         "min_pk_version": "",
         "max_pk_version": ""
+    },
+    {
+        "name": "IceSkates",
+        "author": "Sc1_original",
+        "category": "Ability / Water / Icebending",
+        "last_update": "Sep 13, 2024",
+        "latest_version": "1.0.0",
+        "download_url": "",
+        "source_url": "https://github.com/Sc1original/IceSkates",
+        "min_mc_version": "",
+        "max_mc_version": "",
+        "min_pk_version": "",
+        "max_pk_version": ""
     }
 ]
