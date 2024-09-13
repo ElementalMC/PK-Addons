@@ -106,79 +106,89 @@
   <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
   <script src="https://cdn.datatables.net/plug-ins/1.13.3/sorting/datetime-moment.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const forumUrl = "https://cozmycdev.github.io/PK-Addons/forum.json";
-      const githubUrl = "https://cozmycdev.github.io/PK-Addons/github.json";
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const forumUrl = "https://cozmycdev.github.io/PK-Addons/forum.json";
+    const githubUrl = "https://cozmycdev.github.io/PK-Addons/github.json";
 
-      function fetchAndMergeData() {
-        return Promise.all([fetch(forumUrl), fetch(githubUrl)])
-          .then(responses => Promise.all(responses.map(res => res.json())))
-          .then(([forumData, githubData]) => {
-            if (!Array.isArray(forumData) || !Array.isArray(githubData)) {
-              throw new Error('Invalid data format: Expected arrays');
-            }
+    function fetchAndMergeData() {
+      return Promise.all([fetch(forumUrl), fetch(githubUrl)])
+        .then(responses => Promise.all(responses.map(res => res.json())))
+        .then(([forumData, githubData]) => {
+          // Ensure data is in array format
+          if (!Array.isArray(forumData) || !Array.isArray(githubData)) {
+            throw new Error('Invalid data format: Expected arrays');
+          }
 
-            return [...forumData, ...githubData];
-          })
-          .catch(error => {
-            console.error('Error fetching or merging data:', error);
-            return [];
-          });
-      }
-
-      function normalizeDate(dateStr) {
-        const formats = [
-          "MMM D, YYYY", // e.g. "Apr 13, 2015"
-          "MMM D YYYY", // e.g. "Apr 13 2015"
-          "MMMM D, YYYY", // e.g. "April 13, 2015"
-          "MMMM D YYYY" // e.g. "April 13 2015"
-        ];
-
-        const date = moment(dateStr, formats, true);
-        return date.isValid() ? date.format('YYYY-MM-DD') : null;
-      }
-
-      fetchAndMergeData().then(data => {
-        if (!Array.isArray(data)) {
-          console.error('Invalid data format: Expected an array');
-          return;
-        }
-
-        const tableBody = document.getElementById("table-body");
-
-        data.forEach(entry => {
-          const normalizedDate = normalizeDate(entry.last_update);
-          const row = document.createElement("tr");
-
-          row.innerHTML = `
-            <td>${entry.name || 'N/A'}</td>
-            <td>${entry.author || 'N/A'}</td>
-            <td>${entry.category || 'N/A'}</td>
-            <td>${normalizedDate || 'N/A'}</td>
-            <td>${entry.latest_version || 'N/A'}</td>
-            <td><a href="${entry.download_url || '#'}" target="_blank">Download</a></td>
-            <td><a href="${entry.source_url || '#'}" target="_blank">Source</a></td>
-            <td>${entry.min_mc_version || 'N/A'}</td>
-            <td>${entry.max_mc_version || 'N/A'}</td>
-            <td>${entry.min_pk_version || 'N/A'}</td>
-            <td>${entry.max_pk_version || 'N/A'}</td>
-          `;
-
-          tableBody.appendChild(row);
+          return [...forumData, ...githubData];
+        })
+        .catch(error => {
+          console.error('Error fetching or merging data:', error);
+          return [];
         });
+    }
 
-        $.fn.dataTable.moment('YYYY-MM-DD');
-        $('#table').DataTable();
+    function normalizeDate(dateStr) {
+      const formats = [
+        "MMM D, YYYY", // e.g. "Apr 13, 2015"
+        "MMM D YYYY", // e.g. "Apr 13 2015"
+        "MMMM D, YYYY", // e.g. "April 13, 2015"
+        "MMMM D YYYY" // e.g. "April 13 2015"
+      ];
+
+      const date = moment(dateStr, formats, true);
+      return date.isValid() ? date.format('YYYY-MM-DD') : null;
+    }
+
+    fetchAndMergeData().then(data => {
+      if (!Array.isArray(data)) {
+        console.error('Invalid data format: Expected an array');
+        return;
+      }
+
+      const tableBody = document.getElementById("table-body");
+
+      data.forEach(entry => {
+        const normalizedDate = normalizeDate(entry.last_update);
+        const row = document.createElement("tr");
+
+        row.innerHTML = `
+          <td>${entry.name || 'N/A'}</td>
+          <td>${entry.author || 'N/A'}</td>
+          <td>${entry.category || 'N/A'}</td>
+          <td>${normalizedDate || 'N/A'}</td>
+          <td>${entry.latest_version || 'N/A'}</td>
+          <td><a href="${entry.download_url || '#'}" target="_blank">Download</a></td>
+          <td><a href="${entry.source_url || '#'}" target="_blank">Source</a></td>
+          <td>${entry.min_mc_version || 'N/A'}</td>
+          <td>${entry.max_mc_version || 'N/A'}</td>
+          <td>${entry.min_pk_version || 'N/A'}</td>
+          <td>${entry.max_pk_version || 'N/A'}</td>
+        `;
+
+        tableBody.appendChild(row);
       });
 
-      document.getElementById('theme-selector').addEventListener('change', function() {
-        const theme = this.value;
-        const themeStylesheet = document.getElementById('theme-stylesheet');
-        themeStylesheet.href = `https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/${theme}/bootstrap.min.css`;
+      $.fn.dataTable.moment('YYYY-MM-DD');
+
+      $('#table').DataTable({
+        "order": [[3, 'desc']], 
+        "columnDefs": [
+          {
+            "targets": 3, 
+            "type": "date"
+          }
+        ]
       });
     });
-  </script>
+
+    document.getElementById('theme-selector').addEventListener('change', function() {
+      const theme = this.value;
+      const themeStylesheet = document.getElementById('theme-stylesheet');
+      themeStylesheet.href = `https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/${theme}/bootstrap.min.css`;
+    });
+  });
+</script>
 </body>
 
 </html>
