@@ -1,0 +1,28 @@
+[
+  {
+    "name": "JedCore",
+    "author": "jedk1 (Fork: Aztl)",
+    "category": "Side Plugin / Ability Pack",
+    "release_date": "",
+    "latest_version": "2.13.2",
+    "download_url": "https://github.com/Aztlon/JedCore/releases",
+    "source_url": "https://github.com/Aztlon/JedCore",
+    "min_mc_version": "",
+    "max_mc_version": "",
+    "min_pk_version": "",
+    "max_pk_version": ""
+  },
+  {
+    "name": "JedCore",
+    "author": "jedk1 (Fork: Cozmyc)",
+    "category": "Side Plugin / Ability Pack",
+    "release_date": "",
+    "latest_version": "2.14.1",
+    "download_url": "https://github.com/CozmycDev/JedCore/releases",
+    "source_url": "https://github.com/CozmycDev/JedCore",
+    "min_mc_version": "1.20.5",
+    "max_mc_version": "1.21.1",
+    "min_pk_version": "1.11.3",
+    "max_pk_version": "1.12-BETA"
+  },
+]
