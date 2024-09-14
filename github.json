@@ -247,19 +247,6 @@
         "max_pk_version": ""
     },
     {
-        "name": "ProjectCoco",
-        "author": "slokxo",
-        "category": "Side Plugin / Ability Pack",
-        "last_update": "Jul 5, 2023",
-        "latest_version": "",
-        "download_url": "",
-        "source_url": "https://github.com/slokxo/ProjectCoco",
-        "min_mc_version": "",
-        "max_mc_version": "",
-        "min_pk_version": "",
-        "max_pk_version": ""
-    },
-    {
         "name": "Hackathon Pack",
         "author": "ReleasedSnow",
         "category": "Side Plugin / Ability Pack / Icebending",
