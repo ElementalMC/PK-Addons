@@ -126,8 +126,17 @@
 
         data.forEach(entry => {
             const normalizedDate = normalizeDate(entry.last_update);
-            const downloadLink = entry.download_url ? `<a href="${entry.download_url}" target="_blank"><i class="fa-solid fa-download"></i></a>` : '<i class="fas fa-question-circle"></i>';
-            const sourceLink = entry.source_url ? `<a href="${entry.source_url}" target="_blank">Source</a>` : '<i class="fas fa-question-circle"></i>';
+            const downloadLink = entry.download_url 
+                ? (entry.download_url !== "DEAD LINK" 
+                ? `<a href="${entry.download_url}" target="_blank"><i class="fa-solid fa-download"></i></a>` 
+                : '<i class="fa-solid fa-x"></i>') 
+            : '<i class="fas fa-question-circle"></i>'; 
+
+            const sourceLink = entry.source_url 
+                ? (entry.source_url !== "DEAD LINK" 
+                ? `<a href="${entry.source_url}" target="_blank">Source</a>` 
+                : '<i class="fa-solid fa-x"></i>') 
+            : '<i class="fas fa-question-circle"></i>';
 
             const row = document.createElement("tr");
 
