@@ -54,7 +54,7 @@
     {
         "name": "Guidance",
         "author": "Cozmyc",
-        "category": "Ability (Air/Spiritual)",
+        "category": "Ability / Air / Spiritual",
         "last_update": "July 26, 2024",
         "latest_version": "1.1.0",
         "download_url": "https://github.com/CozmycDev/PK-Guidance/releases",
@@ -67,7 +67,7 @@
     {
         "name": "BloodShock",
         "author": "Cozmyc",
-        "category": "Ability (Water/Bloodbending)",
+        "category": "Ability / Water / Bloodbending",
         "last_update": "July 29, 2024",
         "latest_version": "1.0.6",
         "download_url": "https://github.com/CozmycDev/PK-BloodShock/releases",
@@ -80,7 +80,7 @@
     {
         "name": "SandSpout",
         "author": "Cozmyc",
-        "category": "Ability (Earth/Sand)",
+        "category": "Ability / Earth / Sand",
         "last_update": "July 17, 2024",
         "latest_version": "1.0.7",
         "download_url": "https://github.com/CozmycDev/PK-SandSpout/releases",
@@ -93,7 +93,7 @@
     {
         "name": "Sprout",
         "author": "NickC1211 (Fork: Cozmyc)",
-        "category": "Ability (Water/Plantbending)",
+        "category": "Ability / Water / Plantbending)",
         "last_update": "July 8, 2024",
         "latest_version": "5.3.1",
         "download_url": "https://github.com/CozmycDev/PK-Sprout/releases",
