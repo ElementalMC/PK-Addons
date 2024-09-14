@@ -24,7 +24,7 @@ jobs:
       run: pip install --upgrade pip
 
     - name: Update index.html
-      run: python update_html.py
+      run: python update.py
 
     - name: Commit changes
       run: |
