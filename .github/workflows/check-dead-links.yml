@@ -22,7 +22,7 @@ jobs:
           pip install requests
 
       - name: Run update script
-        run: python script_name.py 
+        run: python check_dead_links.py 
 
       - name: Commit and push if JSON files changed
         run: |
