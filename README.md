@@ -16,12 +16,12 @@ Example entry in `github.json`
     "author": "Cozmyc", // the plugin author, multiple authors/maintainers can be listed
     "category": "Ability / Earth / Sand", // add whatever tags you wish! makes it easier to find
     "last_update": "July 17, 2024", // the date the addon/plugin was last updated, it should be in this format for sorting
-    "latest_version": "1.0.7", // the most recent version for the below links
-    "download_url": "https://github.com/CozmycDev/PK-SandSpout/releases", // download page for the addon
+    "latest_version": "1.0.7", // the most recent version for the download_url below
+    "download_url": "https://github.com/CozmycDev/PK-SandSpout/releases", // download page for the addon, can be a releases page or direct download
     "source_url": "https://github.com/CozmycDev/PK-SandSpout/", // information page for the addon
-    "min_mc_version": "1.16.5", // the lowest MC version the addon is known to support
-    "max_mc_version": "1.21.1", // the highest MC version the addon is known to support
-    "min_pk_version": "", // the lowest PK version the addon is known to support
-    "max_pk_version": "" // the highest PK version the addon is known to support
+    "min_mc_version": "1.16.5", // the lowest MC version the above version is known to support
+    "max_mc_version": "1.21.1", // the highest MC version the above version is known to support
+    "min_pk_version": "", // the lowest PK version the above version is known to support
+    "max_pk_version": "" // the highest PK version the above version is known to support
 }
 ```
