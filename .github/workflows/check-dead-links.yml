@@ -24,10 +24,12 @@ jobs:
       - name: Run update script
         run: python check_dead_links.py 
 
-      - name: Commit and push if JSON files changed
+      - name: Commit and push changes
         run: |
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add forum.json github.json
           git diff-index --quiet HEAD || git commit -m "Update JSON files with dead link checks"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
