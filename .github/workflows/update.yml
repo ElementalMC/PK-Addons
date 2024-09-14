@@ -5,6 +5,7 @@ on:
     paths:
       - 'github.json'
       - 'forum.json'
+  workflow_dispatch: 
 
 jobs:
   update-last-updated:
