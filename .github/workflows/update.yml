@@ -1,0 +1,39 @@
+name: Update Last Updated
+
+on:
+  push:
+    paths:
+      - 'github.json'
+      - 'forum.json'
+
+jobs:
+  update-last-updated:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x' 
+
+      - name: Install dependencies
+        run: pip install beautifulsoup4 
+
+      - name: Update index.html
+        run: |
+          python update.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Actions"
+          git add index.html
+          git diff-index --quiet HEAD || git commit -m "Update Last Updated date in index.html"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
