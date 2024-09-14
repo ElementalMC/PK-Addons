@@ -6,7 +6,7 @@ Disclaimer: This site is not an official ProjectKorra service. The information p
 
 # Contributions!
 Are you an addon developer and want to list your addon? 
-Do you have information related to any addons listed here you would like updated?
+Do you have information related to any ProjectKorra addons you would like updated or listed?
 Open a PR or issue here! All addon information is found in `forum.json` and `github.json`, for projectkorra.com and here respectively.
 
 Example entry in `github.json`
