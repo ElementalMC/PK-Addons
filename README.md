@@ -1,1 +1,1 @@
-https://projectkorra.net/
+https://cozmycdev.github.io/PK-Addons/
