@@ -1,74 +1,89 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<meta content="no-cache" http-equiv="cache-control"/>
-<meta content="0" http-equiv="expires"/>
-<meta content="no-cache" http-equiv="pragma"/>
-<meta content="summary_large_image" name="twitter:card"/>
-<meta content="Cozmyc" name="twitter:site"/>
-<meta content="ProjectKorra Addons Catalogue" name="twitter:title"/>
-<meta content="Welcome to the catalogue of addons for ProjectKorra, sourced from the ProjectKorra forums and GitHub, fully updated at least quarterly. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons" name="twitter:description"/>
-<meta content="https://github.com/CozmycDev/PK-Addons/" name="twitter:url"/>
-<meta content="website" property="og:type"/>
-<meta content="ProjectKorra Addons Catalogue" property="og:title"/>
-<meta content="Welcome to the catalogue of addons for ProjectKorra, sourced from the ProjectKorra forums and GitHub, fully updated at least quarterly. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons" property="og:description"/>
-<meta content="https://github.com/CozmycDev/PK-Addons/" property="og:url"/>
-<title>ProjectKorra Addons</title>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
-<link href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css" rel="stylesheet"/>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
-<link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/lux/bootstrap.min.css" id="theme-stylesheet" rel="stylesheet"/>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv='cache-control' content='no-cache'>
+  <meta http-equiv='expires' content='0'>
+  <meta http-equiv='pragma' content='no-cache'>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="Cozmyc">
+  <meta name="twitter:title" content="ProjectKorra Addons Catalogue">
+  <meta name="twitter:description" content="Welcome to the catalogue of addons for ProjectKorra, sourced from the ProjectKorra forums and GitHub, fully updated at least quarterly. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
+  <meta name="twitter:url" content="https://github.com/CozmycDev/PK-Addons/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ProjectKorra Addons Catalogue">
+  <meta property="og:description" content="Welcome to the catalogue of addons for ProjectKorra, sourced from the ProjectKorra forums and GitHub, fully updated at least quarterly. Contributions are welcome, and removal requests will be honored. Data can be found at: https://github.com/CozmycDev/PK-Addons">
+  <meta property="og:url" content="https://github.com/CozmycDev/PK-Addons/">
+
+  <title>ProjectKorra Addons</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link id="theme-stylesheet" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.0/dist/lux/bootstrap.min.css">
+
+  <style>
     select {
-      color: #ffffff; /* Changes text color to white */
-      background-color: #2c2c2c; /* Adjust background to match your theme */
-      border: 1px solid #6c757d; /* Adjusts border color to blend with the theme */
-      padding: 5px; /* Adjust padding if necessary */
+      color: #ffffff;
+      background-color: #2c2c2c;
+      border: 1px solid #6c757d;
+      padding: 5px;
     }
 
     select option {
-      color: #000000; /* Optional: make the options inside white when hovered */
-      background-color: #ffffff; /* Optional: adjusts background of the dropdown options */
+      color: #000000;
+      background-color: #ffffff;
     }
   </style>
 </head>
+
 <body class="bg-dark text-white">
-<div class="container my-5">
-<h1 class="text-center mb-4">ProjectKorra Addons</h1>
-<div class="table-responsive">
-<table class="table table-dark table-striped table-bordered text-white" id="table">
-<thead class="bg-secondary">
-<tr>
-<th>Name</th>
-<th>Author</th>
-<th>Category</th>
-<th>Last Update</th>
-<th>Latest Version</th>
-<th>Download</th>
-<th>Source</th>
-<th>Min MC</th>
-<th>Max MC</th>
-<th>Min PK</th>
-<th>Max PK</th>
-</tr>
-</thead>
-<tbody id="table-body">
-</tbody>
-</table>
-</div>
-</div>
-<div class="text-center">
-<p>This site is not owned or operated by ProjectKorra.&lt;br&gt;If you would like to see something added or removed, open a PR or issue on &lt;a href="https://github.com/CozmycDev/PK-Addons"&gt;the repo&lt;/a&gt;.&lt;br&gt;Legend: &lt;i class="fas fa-question-circle"&gt;&lt;/i&gt;=Unknown, &lt;i class="fa-solid fa-x"&gt;&lt;/i&gt;=Dead Link &lt;br&gt;Last Updated: Sep 14, 2024</p>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
-<script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/plug-ins/1.13.3/sorting/datetime-moment.js"></script>
-<script>
+  <div class="container my-5">
+    <h1 class="text-center mb-4">ProjectKorra Addons</h1>
+    
+    <div class="table-responsive">
+      <table id="table" class="table table-dark table-striped table-bordered text-white">
+
+        <thead class="bg-secondary">
+          <tr>
+            <th>Name</th>
+            <th>Author</th>
+            <th>Category</th>
+            <th>Last Update</th>
+            <th>Latest Version</th>
+            <th>Download</th>
+            <th>Source</th>
+            <th>Min MC</th>
+            <th>Max MC</th>
+            <th>Min PK</th>
+            <th>Max PK</th>
+          </tr>
+        </thead>
+
+        <tbody id="table-body">
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+
+  <div class="text-center">
+    <p>
+      This site is not owned or operated by ProjectKorra.<br>If you would like to see something added or removed, open a PR or issue on <a href="https://github.com/CozmycDev/PK-Addons">the repo</a>.<br>Legend: <i class="fas fa-question-circle"></i>=Unknown, <i class="fa-solid fa-x"></i>=Dead Link <br>Last Updated: Sep 13, 2024
+    </p>
+  </div>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/plug-ins/1.13.3/sorting/datetime-moment.js"></script>
+
+  <script>
     document.addEventListener("DOMContentLoaded", function() {  
       const forumUrl = "https://cozmycdev.github.io/PK-Addons/forum.json";
       const githubUrl = "https://cozmycdev.github.io/PK-Addons/github.json";
@@ -156,5 +171,6 @@
       });
     });
   </script>
+
 </body>
 </html>
