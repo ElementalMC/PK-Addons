@@ -103,11 +103,10 @@
           serverData.motd = serverData.onlinePlayers = serverData.maxPlayers = serverData.version = '<i class="fas fa-times"></i>';
         }
 
-        const cells = row.getElementsByTagName("td");
-        cells[4].innerHTML = serverData.motd;
-        cells[5].innerHTML = serverData.onlinePlayers;
-        cells[6].innerHTML = serverData.maxPlayers;
-        cells[7].innerHTML = serverData.version;
+        table.cell(rowIndex, 4).data(serverData.motd);
+        table.cell(rowIndex, 5).data(serverData.onlinePlayers);
+        table.cell(rowIndex, 6).data(serverData.maxPlayers);
+        table.cell(rowIndex, 7).data(serverData.version);
       }
 
       fetch(serversUrl)
@@ -124,28 +123,39 @@
               ? `<i class="fas fa-check-circle"></i> ${server.bedrock_port}`
               : '<i class="fas fa-times"></i>';
 
-            const row = document.createElement("tr");
-            row.innerHTML = `
-              <td>${server.name || '<i class="fas fa-question-circle"></i>'}</td>
-              <td>${server.ip || '<i class="fas fa-question-circle"></i>'}</td>
-              <td>${discordLink}</td>
-              <td>${bedrockPort}</td>
-              <td><i class="fas fa-spinner"></i></td> 
-              <td><i class="fas fa-spinner"></i></td>
-              <td><i class="fas fa-spinner"></i></td>
-              <td><i class="fas fa-spinner"></i></td> 
-            `;
-            tableBody.appendChild(row);
+            const ipCell = server.ip
+              ? `<span class="copy-ip" data-ip="${server.ip}" style="cursor: pointer;">${server.ip}</span>`
+              : '<i class="fas fa-question-circle"></i>';
 
-            queryServer(server.ip, row);
-          }
+            table.row.add([
+                server.name || '<i class="fas fa-question-circle"></i>',
+                ipCell, 
+                server.tags || '<i class="fas fa-question-circle"></i>',
+                discordLink,
+                bedrockPort,
+                '<i class="fas fa-spinner"></i>', 
+                '<i class="fas fa-spinner"></i>', 
+                '<i class="fas fa-spinner"></i>', 
+                '<i class="fas fa-spinner"></i>', 
+                server.languages || '<i class="fas fa-question-circle"></i>'
+              ]).draw(false); 
+            });
 
-          $('#servers-table').DataTable();
-        })
-        .catch(error => {
-          console.error('Error fetching or displaying server data:', error);
-        });
-    });
+            document.querySelectorAll('.copy-ip').forEach((element) => {
+              element.addEventListener('click', function () {
+                const ip = this.getAttribute('data-ip');
+                navigator.clipboard.writeText(ip).then(() => {
+                  alert(`IP address ${ip} copied to clipboard!`);
+                }).catch(err => {
+                  console.error('Failed to copy text: ', err);
+                });
+              });
+            });
+          })
+          .catch(error => {
+            console.error('Error fetching or displaying server data:', error);
+          });
+      });
   </script>
 
 </body>
