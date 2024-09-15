@@ -1,0 +1,74 @@
+[
+    {
+        "name": "MegaCraft",     
+        "ip": "hub.megacrafting.com",
+        "tags": "Towny / Factions / Arenas",
+        "bedrock_port": "19132",
+        "discord_invite": "https://discord.gg/megacraft",
+        "languages": "en"
+    },
+    {
+        "name": "ElementalMC",     
+        "ip": "play.elementalmc.live",
+        "tags": "Factions",
+        "bedrock_port": "19132",
+        "discord_invite": "https://discord.gg/elementalmc",
+        "languages": "en"
+    },
+    {
+        "name": "Benders Destiny",     
+        "ip": "play.bendersdestiny.com",
+        "tags": "Lands / SMP",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/S2sztHzKsv",
+        "languages": "en"
+    },
+    {
+        "name": "Padbenders",     
+        "ip": "padbenders.aternos.me",
+        "tags": "Cracked / SMP",
+        "bedrock_port": "",
+        "discord_invite": "",
+        "languages": "en"
+    },
+    {
+        "name": "SnickerzCraft",     
+        "ip": "play.snickerzcraft.com",
+        "tags": "RPG / SMP",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/ezy4VtMgyW",
+        "languages": "en"
+    },
+    {
+        "name": "Avatarverse",     
+        "ip": "play.avatarverse.net",
+        "tags": "RPG / Arenas",
+        "bedrock_port": "19132",
+        "discord_invite": "https://discord.gg/avatarverse",
+        "languages": "en"
+    },
+    {
+        "name": "Four Nations",     
+        "ip": "play.fournationsmc.net",
+        "tags": "RPG / Creative / Arenas",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/z8WqZktWbX",
+        "languages": "en"
+    },
+    {
+        "name": "EtherealCraft",     
+        "ip": "play.etherealcraft.net",
+        "tags": "RPG / Towny / Arenas",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/fY5kQMmD36",
+        "languages": "en"
+    },
+    {
+        "name": "SpiritWorld",     
+        "ip": "spiritworld.su",
+        "tags": "SMP / Arenas",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/StsAEjHeaf",
+        "languages": "ru"
+    }
+]
