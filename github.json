@@ -182,6 +182,32 @@
         "max_pk_version": ""
     },
     {
+        "name": "Spirits Remastered",
+        "author": "xNuminousx (StrangeOne101)",
+        "category": "Side Plugin / Ability Pack",
+        "last_update": "Apr 30, 2023",
+        "latest_version": "1.1.3",
+        "download_url": "https://github.com/StrangeOne101/Spirits/releases",
+        "source_url": "https://github.com/StrangeOne101/Spirits",
+        "min_mc_version": "",
+        "max_mc_version": "",
+        "min_pk_version": "",
+        "max_pk_version": ""
+    },
+    {
+        "name": "Spirits",
+        "author": "xNuminousx (Darkermoon)",
+        "category": "Side Plugin / Ability Pack",
+        "last_update": "June 2, 2024",
+        "latest_version": "1.2.3",
+        "download_url": "https://github.com/SoraShiunin/Spirits-Random-Stuff-/releases",
+        "source_url": "https://github.com/SoraShiunin/Spirits-Random-Stuff-/",
+        "min_mc_version": "",
+        "max_mc_version": "1.20.4",
+        "min_pk_version": "1.11.2",
+        "max_pk_version": "1.12.0-BETA"
+    },
+    {
         "name": "ProjectCosmos",
         "author": "Xoara",
         "category": "Side Plugin / Ability Pack",
