@@ -50,14 +50,12 @@
           <tr>
             <th>Name</th>
             <th>IP</th>
-            <th>Tags</th>
             <th>Discord</th>
             <th>Bedrock Port</th>
             <th>MOTD</th>
             <th>Online Players</th>
             <th>Max Players</th>
             <th>Supported Version(s)</th>
-            <th>Languages</th>
           </tr>
         </thead>
         <tbody id="servers-table-body">
@@ -119,7 +117,7 @@
 
           for (const server of data) {
             const discordLink = server.discord_invite
-              ? `<a href="${server.discord_invite}" target="_blank">Join</a>`
+              ? `<a href="${server.discord_invite}" target="_blank">Join <i class="fa-brands fa-discord"></i></a>`
               : '<i class="fas fa-question-circle"></i>';
 
             const bedrockPort = server.bedrock_port
@@ -130,14 +128,12 @@
             row.innerHTML = `
               <td>${server.name || '<i class="fas fa-question-circle"></i>'}</td>
               <td>${server.ip || '<i class="fas fa-question-circle"></i>'}</td>
-              <td>${server.tags || '<i class="fas fa-question-circle"></i>'}</td>
               <td>${discordLink}</td>
               <td>${bedrockPort}</td>
               <td><i class="fas fa-spinner"></i></td> 
               <td><i class="fas fa-spinner"></i></td>
               <td><i class="fas fa-spinner"></i></td>
               <td><i class="fas fa-spinner"></i></td> 
-              <td>${server.languages || '<i class="fas fa-question-circle"></i>'}</td>
             `;
             tableBody.appendChild(row);
 
