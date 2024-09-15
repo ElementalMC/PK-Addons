@@ -104,10 +104,10 @@
         }
 
         const cells = row.getElementsByTagName("td");
-        cells[5].innerHTML = serverData.motd;
-        cells[6].innerHTML = serverData.onlinePlayers;
-        cells[7].innerHTML = serverData.maxPlayers;
-        cells[8].innerHTML = serverData.version;
+        cells[4].innerHTML = serverData.motd;
+        cells[5].innerHTML = serverData.onlinePlayers;
+        cells[6].innerHTML = serverData.maxPlayers;
+        cells[7].innerHTML = serverData.version;
       }
 
       fetch(serversUrl)
