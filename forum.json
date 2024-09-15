@@ -119,7 +119,7 @@
     {
         "name": "LightPack",
         "author": "Amf1ch",
-        "category": "light / lightspirit / spirit",
+        "category": "light / lightspirit / spirit / Ability Pack",
         "last_update": "Mar 23, 2024",
         "latest_version": "v2.4",
         "download_url": "https://projectkorra.com/forum/resources/lightpack.488/download",
@@ -158,7 +158,7 @@
     {
         "name": "AvatachTweaks",
         "author": "Dreig",
-        "category": "airbending / airblast / airspout / airsuction / avatachtweaks / rainbending",
+        "category": "airbending / airblast / airspout / airsuction / avatachtweaks / rainbending / Ability Pack",
         "last_update": "Sep 18, 2023",
         "latest_version": "V0.2.9.2",
         "download_url": "https://projectkorra.com/forum/resources/avatachtweaks.457/download",
@@ -184,7 +184,7 @@
     {
         "name": "Spirits: The Complete Set",
         "author": "Pride",
-        "category": "spirits",
+        "category": "spirits / Ability Pack",
         "last_update": "Sep 2, 2022",
         "latest_version": "Build 10, PK 1.10.0, Spirits Remastered",
         "download_url": "https://projectkorra.com/forum/resources/spirits-the-complete-set.385/download",
@@ -210,7 +210,7 @@
     {
         "name": "SUS - April Fools Among Us joke",
         "author": "StrangeOne101",
-        "category": "amogus / among us / april fools / avatar",
+        "category": "amogus / among us / april fools / avatar / Holiday",
         "last_update": "Mar 31, 2023",
         "latest_version": "1.0.1",
         "download_url": "https://projectkorra.com/forum/resources/sus-april-fools-among-us-joke.477/download",
@@ -275,7 +275,7 @@
     {
         "name": "Prride's Earth Pack Extravaganza!",
         "author": "Pride",
-        "category": "earth / earthbending / lavabending / metalbending / sandbending",
+        "category": "earth / earthbending / lavabending / metalbending / sandbending / Ability Pack",
         "last_update": "Jul 18, 2021",
         "latest_version": "VERSION 1.4, PK 1.9.2",
         "download_url": "https://projectkorra.com/forum/resources/prrides-earth-pack-extravaganza.436/download",
@@ -535,7 +535,7 @@
     {
         "name": "Hiro's HackathonPack",
         "author": "Hiro3",
-        "category": "air / airbending / combo / earth / earthbending / hackathon / hiro / hiro3",
+        "category": "air / airbending / combo / earth / earthbending / hackathon / hiro / hiro3 / Ability Pack",
         "last_update": "Jul 22, 2021",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/hiros-hackathonpack.440/download",
@@ -626,7 +626,7 @@
     {
         "name": "Tyson's Pride Bending Move Pack!",
         "author": "Tyson-xLumos",
-        "category": "bending / custom abilities / pride",
+        "category": "bending / custom abilities / pride / Ability Pack",
         "last_update": "Jun 29, 2021",
         "latest_version": "v1.0",
         "download_url": "https://projectkorra.com/forum/resources/tysons-pride-bending-move-pack.433/download",
@@ -730,7 +730,7 @@
     {
         "name": "LumosBends Move Pack",
         "author": "Tyson-xLumos",
-        "category": "ability / addonability / addons / custom abilities",
+        "category": "ability / addonability / addons / custom abilities / Ability Pack",
         "last_update": "Apr 7, 2021",
         "latest_version": "1.0.1",
         "download_url": "https://projectkorra.com/forum/resources/lumosbends-move-pack.421/download",
@@ -2420,7 +2420,7 @@
     {
         "name": "ProjectAddons",
         "author": "Simplicitee",
-        "category": "1.13.2 / 1.14.x / addons / avatar / chiblocking / earthbending / firebending / side plugin / waterbending",
+        "category": "1.13.2 / 1.14.x / addons / avatar / chiblocking / earthbending / firebending / side plugin / waterbending / Ability Pack",
         "last_update": "Apr 2, 2020",
         "latest_version": "1.0.6",
         "download_url": "https://projectkorra.com/forum/resources/projectaddons.371/download",
@@ -2459,7 +2459,7 @@
     {
         "name": "Vulcan",
         "author": "Zephyrus",
-        "category": "lavabending / side plugin",
+        "category": "lavabending / side plugin / Ability Pack",
         "last_update": "Aug 17, 2021",
         "latest_version": "1.1.0",
         "download_url": "https://projectkorra.com/forum/resources/vulcan.443/download",
@@ -2485,7 +2485,7 @@
     {
         "name": "Spirits",
         "author": "xNuminousx",
-        "category": "dark / light / spirits / xnuminousx",
+        "category": "dark / light / spirits / xnuminousx / Ability Pack",
         "last_update": "Sep 8, 2022",
         "latest_version": "Beta 1.0.14",
         "download_url": "https://projectkorra.com/forum/resources/spirits.323/download",
@@ -2511,7 +2511,7 @@
     {
         "name": "LoveLovePlus",
         "author": "StrangeOne101",
-        "category": "abilites / love / side plugin / valentines",
+        "category": "abilites / love / side plugin / valentines / Holiday / Ability Pack",
         "last_update": "Feb 12, 2023",
         "latest_version": "1.0",
         "download_url": "https://projectkorra.com/forum/resources/loveloveplus.475/download",
@@ -2615,7 +2615,7 @@
     {
         "name": "Dragon",
         "author": "Yujiro",
-        "category": "firebending",
+        "category": "firebending / Ability Pack",
         "last_update": "Feb 18, 2022",
         "latest_version": "1.1.0",
         "download_url": "https://projectkorra.com/forum/resources/dragon.456/download",
@@ -2641,7 +2641,7 @@
     {
         "name": "Christmas Element",
         "author": "Yujiro",
-        "category": "christmas / element",
+        "category": "christmas / element / Holiday / Ability Pack",
         "last_update": "Dec 24, 2021",
         "latest_version": "1.0.2",
         "download_url": "https://projectkorra.com/forum/resources/christmas-element.453/download",
@@ -2654,7 +2654,7 @@
     {
         "name": "Zephyrus",
         "author": "Zephyrus",
-        "category": "addons / airbending / zephyrus",
+        "category": "addons / airbending / zephyrus / Ability Pack",
         "last_update": "Nov 21, 2021",
         "latest_version": "1.1.1",
         "download_url": "https://projectkorra.com/forum/resources/zephyrus.450/download",
@@ -2771,7 +2771,7 @@
     {
         "name": "ChiPack",
         "author": "Simplicitee",
-        "category": "chiblocking",
+        "category": "chiblocking / Ability Pack",
         "last_update": "Feb 14, 2019",
         "latest_version": "1.2.1",
         "download_url": "https://projectkorra.com/forum/resources/chipack.246/download",
