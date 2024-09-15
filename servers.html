@@ -74,92 +74,93 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
 
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const serversUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/servers.json";
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const serversUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/servers.json";
+    
+      const table = $('#servers-table').DataTable();
 
-    async function queryServer(ip, rowIndex) {
-      const serverData = {
-        motd: '<i class="fas fa-spinner"></i>',
-        onlinePlayers: '<i class="fas fa-spinner"></i>',
-        maxPlayers: '<i class="fas fa-spinner"></i>',
-        version: '<i class="fas fa-spinner"></i>'
-      };
+      async function queryServer(ip, rowIndex) {
+        const serverData = {
+          motd: '<i class="fas fa-spinner"></i>',
+          onlinePlayers: '<i class="fas fa-spinner"></i>',
+          maxPlayers: '<i class="fas fa-spinner"></i>',
+          version: '<i class="fas fa-spinner"></i>'
+        };
 
-      try {
-        const response = await fetch(`https://api.mcsrvstat.us/2/${ip}`);
-        const data = await response.json();
+        try {
+          const response = await fetch(`https://api.mcsrvstat.us/2/${ip}`);
+          const data = await response.json();
 
-        if (data.online) {
-          serverData.motd = data.motd.clean.join(" ") || "N/A";
-          serverData.onlinePlayers = data.players.online || "N/A";
-          serverData.maxPlayers = data.players.max || "N/A";
-          serverData.version = data.version || "N/A";
-        } else {
+          if (data.online) {
+            serverData.motd = data.motd.clean.join(" ") || "N/A";
+            serverData.onlinePlayers = data.players.online || "N/A";
+            serverData.maxPlayers = data.players.max || "N/A";
+            serverData.version = data.version || "N/A";
+          } else {
+            serverData.motd = serverData.onlinePlayers = serverData.maxPlayers = serverData.version = '<i class="fas fa-times"></i>';
+          }
+        } catch (error) {
+          console.error(`Error fetching server data for ${ip}:`, error);
           serverData.motd = serverData.onlinePlayers = serverData.maxPlayers = serverData.version = '<i class="fas fa-times"></i>';
         }
-      } catch (error) {
-        console.error(`Error fetching server data for ${ip}:`, error);
-        serverData.motd = serverData.onlinePlayers = serverData.maxPlayers = serverData.version = '<i class="fas fa-times"></i>';
+
+        table.cell(rowIndex, 4).data(serverData.motd).draw();
+        table.cell(rowIndex, 5).data(serverData.onlinePlayers).draw();
+        table.cell(rowIndex, 6).data(serverData.maxPlayers).draw();
+        table.cell(rowIndex, 7).data(serverData.version).draw();
       }
 
-      table.cell(rowIndex, 4).data(serverData.motd).draw();
-      table.cell(rowIndex, 5).data(serverData.onlinePlayers).draw();
-      table.cell(rowIndex, 6).data(serverData.maxPlayers).draw();
-      table.cell(rowIndex, 7).data(serverData.version).draw();
-    }
+      fetch(serversUrl)
+        .then(response => response.json())
+        .then((data) => {
+          const tableBody = document.getElementById("servers-table-body");
 
-    fetch(serversUrl)
-      .then(response => response.json())
-      .then((data) => {
-        const tableBody = document.getElementById("servers-table-body");
+          data.forEach((server, index) => {
+            const discordLink = server.discord_invite
+              ? `<a href="${server.discord_invite}" target="_blank">Join <i class="fa-brands fa-discord"></i></a>`
+              : '<i class="fas fa-question-circle"></i>';
 
-        data.forEach((server, index) => {
-          const discordLink = server.discord_invite
-            ? `<a href="${server.discord_invite}" target="_blank">Join <i class="fa-brands fa-discord"></i></a>`
-            : '<i class="fas fa-question-circle"></i>';
+            const bedrockPort = server.bedrock_port
+              ? `<i class="fas fa-check-circle"></i> ${server.bedrock_port}`
+              : '<i class="fas fa-times"></i>';
 
-          const bedrockPort = server.bedrock_port
-            ? `<i class="fas fa-check-circle"></i> ${server.bedrock_port}`
-            : '<i class="fas fa-times"></i>';
+            const ipCell = server.ip
+              ? `<span class="copy-ip" data-ip="${server.ip}" style="cursor: pointer;">${server.ip}</span>`
+              : '<i class="fas fa-question-circle"></i>';
 
-          const ipCell = server.ip
-            ? `<span class="copy-ip" data-ip="${server.ip}" style="cursor: pointer;">${server.ip}</span>`
-            : '<i class="fas fa-question-circle"></i>';
+            const rowIndex = table.row.add([
+              server.name || '<i class="fas fa-question-circle"></i>',
+              ipCell,
+              server.tags || '<i class="fas fa-question-circle"></i>',
+              discordLink,
+              bedrockPort,
+              '<i class="fas fa-spinner"></i>',
+              '<i class="fas fa-spinner"></i>',
+              '<i class="fas fa-spinner"></i>',
+              '<i class="fas fa-spinner"></i>',
+              server.languages || '<i class="fas fa-question-circle"></i>'
+            ]).draw(false).index();
 
-          const rowIndex = table.row.add([
-            server.name || '<i class="fas fa-question-circle"></i>',
-            ipCell, 
-            server.tags || '<i class="fas fa-question-circle"></i>',
-            discordLink,
-            bedrockPort,
-            '<i class="fas fa-spinner"></i>',
-            '<i class="fas fa-spinner"></i>',
-            '<i class="fas fa-spinner"></i>',
-            '<i class="fas fa-spinner"></i>',
-            server.languages || '<i class="fas fa-question-circle"></i>'
-          ]).draw(false).index();
+            queryServer(server.ip, rowIndex);
+          });
 
-          queryServer(server.ip, rowIndex);
-        });
-
-        // Add event listener for IP click to copy it to clipboard
-        document.querySelectorAll('.copy-ip').forEach((element) => {
-          element.addEventListener('click', function () {
-            const ip = this.getAttribute('data-ip');
-            navigator.clipboard.writeText(ip).then(() => {
-              alert(`IP address ${ip} copied to clipboard!`);
-            }).catch(err => {
-              console.error('Failed to copy text: ', err);
+          document.querySelectorAll('.copy-ip').forEach((element) => {
+            element.addEventListener('click', function () {
+              const ip = this.getAttribute('data-ip');
+              navigator.clipboard.writeText(ip).then(() => {
+                alert(`IP address ${ip} copied to clipboard!`);
+              }).catch(err => {
+                console.error('Failed to copy text: ', err);
+              });
             });
           });
+        })
+        .catch(error => {
+          console.error('Error fetching or displaying server data:', error);
         });
-      })
-      .catch(error => {
-        console.error('Error fetching or displaying server data:', error);
-      });
-  });
-</script>
+    });
+  </script>
 
 </body>
 
