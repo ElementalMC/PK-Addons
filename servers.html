@@ -80,7 +80,7 @@
     document.addEventListener("DOMContentLoaded", function () {
       const serversUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/servers.json";
 
-      async function queryServer(ip) {
+      async function queryServer(ip, row) {
         const serverData = {
           motd: '<i class="fas fa-spinner"></i>',
           onlinePlayers: '<i class="fas fa-spinner"></i>',
@@ -105,12 +105,16 @@
           serverData.motd = serverData.onlinePlayers = serverData.maxPlayers = serverData.version = '<i class="fas fa-times"></i>';
         }
 
-        return serverData;
+        const cells = row.getElementsByTagName("td");
+        cells[5].innerHTML = serverData.motd;
+        cells[6].innerHTML = serverData.onlinePlayers;
+        cells[7].innerHTML = serverData.maxPlayers;
+        cells[8].innerHTML = serverData.version;
       }
 
       fetch(serversUrl)
         .then(response => response.json())
-        .then(async (data) => {
+        .then((data) => {
           const tableBody = document.getElementById("servers-table-body");
 
           for (const server of data) {
@@ -129,20 +133,15 @@
               <td>${server.tags || '<i class="fas fa-question-circle"></i>'}</td>
               <td>${discordLink}</td>
               <td>${bedrockPort}</td>
+              <td><i class="fas fa-spinner"></i></td> 
               <td><i class="fas fa-spinner"></i></td>
               <td><i class="fas fa-spinner"></i></td>
-              <td><i class="fas fa-spinner"></i></td>
-              <td><i class="fas fa-spinner"></i></td>
+              <td><i class="fas fa-spinner"></i></td> 
               <td>${server.languages || '<i class="fas fa-question-circle"></i>'}</td>
             `;
             tableBody.appendChild(row);
 
-            const serverInfo = await queryServer(server.ip);
-            const cells = row.getElementsByTagName("td");
-            cells[6].innerHTML = serverInfo.motd;
-            cells[7].innerHTML = serverInfo.onlinePlayers;
-            cells[8].innerHTML = serverInfo.maxPlayers;
-            cells[9].innerHTML = serverInfo.version;
+            queryServer(server.ip, row);
           }
 
           $('#servers-table').DataTable();
