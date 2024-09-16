@@ -112,14 +112,6 @@
         "languages": "en"
     },
     {
-        "name": "Avatar Republic",     
-        "ip": "play.avatarmc.pro",
-        "tags": "Towny / SMP / Arenas",
-        "bedrock_port": "",
-        "discord_invite": "https://discord.gg/yJDcywn",
-        "languages": "en"
-    },
-    {
         "name": "DoodCraft",     
         "ip": "doodcraft.net",
         "tags": "Factions / SMP / Arenas",
