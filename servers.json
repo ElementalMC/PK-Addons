@@ -118,5 +118,69 @@
         "bedrock_port": "",
         "discord_invite": "https://discord.gg/yJDcywn",
         "languages": "en"
+    },
+    {
+        "name": "DoodCraft",     
+        "ip": "doodcraft.net",
+        "tags": "Factions / SMP / Arenas",
+        "bedrock_port": "",
+        "discord_invite": "",
+        "languages": "en"
+    },
+    {
+        "name": "GearsMC",     
+        "ip": "play.gearsmc.com",
+        "tags": "Factions",
+        "bedrock_port": "19132",
+        "discord_invite": "https://discord.gg/SqHv3Pdvvt",
+        "languages": "en"
+    },
+    {
+        "name": "United Elements SMP",     
+        "ip": "158.69.109.213",
+        "tags": "SMP / Towny",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/Z6b8AmZN2h",
+        "languages": "en"
+    },
+    {
+        "name": "The Last Block Bender",     
+        "ip": "play.thelastblockbender.com",
+        "tags": "Arenas",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.com/invite/the-last-blockbender-537378432372178979",
+        "languages": "en"
+    },
+    {
+        "name": "BendingMC",     
+        "ip": "play.bendingmc.net",
+        "tags": "",
+        "bedrock_port": "",
+        "discord_invite": "https://discordapp.com/invite/fVT37qY",
+        "languages": "en"
+    },
+    {
+        "name": "Bending Haven",     
+        "ip": "play.bendinghaven.net",
+        "tags": "",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/8qPmkVT",
+        "languages": "en"
+    },
+    {
+        "name": "Last Element",     
+        "ip": "lastelement.apexmc.co",
+        "tags": "",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/pj2ga4kGmd",
+        "languages": "en"
+    },
+    {
+        "name": "GhastNetwork",     
+        "ip": "play.ghastmc.ir",
+        "tags": "",
+        "bedrock_port": "",
+        "discord_invite": "",
+        "languages": "en"
     }
 ]
