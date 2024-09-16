@@ -25,3 +25,8 @@ Example entry in `github.json`
     "max_pk_version": "" // the highest PK version the above version is known to support
 }
 ```
+
+# Server Owners
+If you run a server using ProjectKorra and want to see it added, removed, or updated, let me know! 
+You can message me or open a PR or issue here.
+Server data is contained within `servers.json`
