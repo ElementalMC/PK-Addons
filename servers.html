@@ -85,16 +85,10 @@
   </div>
 
   <div class="text-center">
-    
-
-
 
 <p>
   This site is not owned or operated by ProjectKorra.<br> If you would like to add, remove, or update a server, feel free to open a PR or issue on <a href="https://github.com/CozmycDev/PK-Addons">the repo</a>.<br>Legend: <i class="fas fa-question-circle"></i>=Unknown, <i class="fa-solid fa-x"></i>=Offline/Not Applicable<br>Last Updated: Sep 16, 2024
 </p>
-
-
-
 
   </div>
 
@@ -106,7 +100,24 @@
     document.addEventListener("DOMContentLoaded", function () {
       const serversUrl = "https://raw.githubusercontent.com/CozmycDev/PK-Addons/main/servers.json";
     
-      const table = $('#servers-table').DataTable();
+      const table = $('#servers-table').DataTable({
+        columnDefs: [
+          {
+            targets: 5, 
+            type: 'num',
+            render: function (data) {
+              return data === 'N/A' ? data : parseInt(data, 10);
+            }
+          },
+          {
+            targets: 6, 
+            type: 'num', 
+            render: function (data) {
+              return data === 'N/A' ? data : parseInt(data, 10);
+            }
+          }
+        ]
+      });
 
       async function queryServer(ip, rowIndex) {
         const serverData = {
