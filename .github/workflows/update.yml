@@ -21,7 +21,7 @@ jobs:
         with:
           python-version: '3.x' 
 
-      - name: Update index.html
+      - name: Update index.html and servers.html
         run: |
           python update.py
         env:
@@ -32,7 +32,8 @@ jobs:
           git config --local user.email "actions@github.com"
           git config --local user.name "GitHub Actions"
           git add index.html
-          git diff-index --quiet HEAD || git commit -m "Update Last Updated date in index.html"
+          git add servers.html
+          git diff-index --quiet HEAD || git commit -m "Automatically update Last Updated date"
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
