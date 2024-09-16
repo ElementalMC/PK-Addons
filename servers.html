@@ -103,18 +103,8 @@
       const table = $('#servers-table').DataTable({
         columnDefs: [
           {
-            targets: 5, 
-            type: 'num',
-            render: function (data) {
-              return data === 'N/A' ? data : parseInt(data, 0);
-            }
-          },
-          {
-            targets: 6, 
-            type: 'num', 
-            render: function (data) {
-              return data === 'N/A' ? data : parseInt(data, 0);
-            }
+            targets: '_all',
+            orderable: false 
           }
         ]
       });
