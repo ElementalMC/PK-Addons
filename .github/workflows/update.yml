@@ -5,6 +5,7 @@ on:
     paths:
       - 'github.json'
       - 'forum.json'
+      - 'servers.json'
   workflow_dispatch: 
 
 jobs:
