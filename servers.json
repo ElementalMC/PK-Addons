@@ -62,5 +62,61 @@
         "bedrock_port": "",
         "discord_invite": "https://discord.gg/StsAEjHeaf",
         "languages": "ru"
+    },
+    {
+        "name": "BendersMC",     
+        "ip": "play.bendersmc.co",
+        "tags": "Factions",
+        "bedrock_port": "19132",
+        "discord_invite": "https://discord.gg/BendersMC",
+        "languages": "en"
+    },
+    {
+        "name": "CraftLords",     
+        "ip": "mc.craftlords.com",
+        "tags": "SMP",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/DjaQNFA",
+        "languages": "en"
+    },
+    {
+        "name": "MythicFarlands",     
+        "ip": "mythicfarlands.apexmc.co",
+        "tags": "SMP",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/KGsANFJQY6",
+        "languages": "en"
+    },
+    {
+        "name": "Elemental SMP",     
+        "ip": "mc.elementalmc.co",
+        "tags": "SMP",
+        "bedrock_port": "",
+        "discord_invite": "https://elementalmc.co/discord",
+        "languages": "en"
+    },
+    {
+        "name": "StarWorksMC",     
+        "ip": "play.starworksmc.us",
+        "tags": "SMP",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/BzBY6dH",
+        "languages": "en"
+    },
+    {
+        "name": "SkyMata.Games",     
+        "ip": "play.skymata.games",
+        "tags": "Towny / SMP",
+        "bedrock_port": "19132",
+        "discord_invite": "https://discord.gg/skymata",
+        "languages": "en"
+    },
+    {
+        "name": "Avatar Republic",     
+        "ip": "play.avatarmc.pro",
+        "tags": "Towny / SMP / Arenas",
+        "bedrock_port": "",
+        "discord_invite": "https://discord.gg/yJDcywn",
+        "languages": "en"
     }
 ]
