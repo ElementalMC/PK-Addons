@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       if (data.online) {
         serverData.motd = data.motd.clean.join(" ") || "N/A";
-        serverData.onlinePlayers = data.players.online || "0";
+        serverData.onlinePlayers = (ip === 'play.elementalmc.live') ? '0' : (data.players.online || "0");
         serverData.maxPlayers = data.players.max || "N/A";
         serverData.version = data.version || "N/A";
       } else {
