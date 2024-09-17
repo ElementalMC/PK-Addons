@@ -340,7 +340,7 @@
     {
         "name": "BendingMobs",
         "author": "Cozmyc",
-        "category": "Side Plugin",
+        "category": "Side Plugin / Mobs",
         "last_update": "Jul 23, 2024",
         "latest_version": "1.2.0",
         "download_url": "https://github.com/CozmycDev/BendingMobs/releases",
@@ -366,7 +366,7 @@
     {
         "name": "ProjectKorraSpirits",
         "author": "Pride",
-        "category": "",
+        "category": "Side Plugin / Elements / Mobs / World",
         "last_update": "Sep 16, 2024",
         "latest_version": "",
         "download_url": "",
