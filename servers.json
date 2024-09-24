@@ -173,6 +173,14 @@
         "tags": "",
         "bedrock_port": "",
         "discord_invite": "",
-        "languages": "en"
-    }
+        "languages": "per, en"
+    },
+    {
+        "name": "OtherlandMc",     
+        "ip": "play.otherlandmc.ir",
+        "tags": "Kingdoms / Survival / Arenas / Minigames",
+        "bedrock_port": "19132",
+        "discord_invite": "https://discord.gg/vah8jBDh",
+        "languages": "per, en"
+    } 
 ]
